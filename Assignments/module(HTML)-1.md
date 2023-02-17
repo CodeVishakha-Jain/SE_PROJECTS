@@ -103,19 +103,19 @@
 
       - Two commonly used block elements are: `<p>` and `<div>`.
 
-      - The <p> element defines a paragraph in an HTML document.
+      - The `<p>` element defines a paragraph in an HTML document.
 
-      - The <div> element defines a division or a section in an HTML document.
+      - The `<div>` element defines a division or a section in an HTML document.
 
     - Inline Elements
       - An inline element does not start on a new line.
 
       - An inline element only takes up as much width as necessary.
 
-      - This is a <span> element inside a paragraph.
+      - This is a `<span>` element inside a paragraph.
     ----
 * How to create a Hyperlink in HTML?
-    - To make a hyperlink in an HTML page, use the `<a>` and `</a>` tags, which are the tags used to define the links. The `<a>` tag indicates where the hyperlink starts and the </a> tag indicates where it ends. Whatever text gets added inside these tags, will work as a hyperlink. Add the URL for the link in the `<a href=” ”>`.
+    - To make a hyperlink in an HTML page, use the `<a>` and `</a>` tags, which are the tags used to define the links. The `<a>` tag indicates where the hyperlink starts and the `</a>` tag indicates where it ends. Whatever text gets added inside these tags, will work as a hyperlink. Add the URL for the link in the `<a href=” ”>`.
     ----
 * What is the use of an iframe tag?
     - An HTML iframe is used to display a web page within a web page.
@@ -171,6 +171,7 @@
     ----
 * How are active links different from normal links?
     - Normal links are links which are there on the page and have not been clicked yet. Active links are those links, which have just been clicked at that instant.
+    ----
 
 * What are the different tags to separate sections of text?
     - There are three tags that can be used to separate the texts:
