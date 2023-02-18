@@ -1,4 +1,4 @@
-\//WAP to print addition of two numbers.
+//WAP to print addition of two numbers.
 #include<stdio.h>
 int main()
 {
