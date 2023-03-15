@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clipboard</title>
+        <style>
+            *
+            {
+                margin:0;
+                padding:10px 0px;
+                font-size: 20px;
+            }
+            div.main
+            {
+                margin-left:125px;
+            }
+            a{
+                text-decoration: none;
+                font:rgb(53, 166, 236);
+            }
+            select{
+                border-radius:1px;
+                font-size: 12px;
+                padding:5px;
+            }
+            option
+            {
+                font-size:12px;
+            }
+            button{
+                border:none;
+                background-color:rgb(227, 225, 225);
+                width:150px;
+                padding:5px;
+            }
+            button:hover
+            {
+                border:2px solid grey;
+            }
+            .help::before{
+                content:url(../settingsiframeimage/image.png);
+                
+            }
+            .feedback::before
+            {
+                content:url(../settingsiframeimage/image2.png);
+            }
+            .container
+            {
+                height: 10px;
+                width: 60px;
+                border:2px solid rgb(0, 0, 0);
+                border-radius: 20px;
+                position: relative;
+                /*if position is relative then no one can use the left space given by the element */
+            } 
+            input
+            {
+                display:none;
+            }
+            label.circle{
+                display:inline-block;
+                position:absolute;
+                top:3px;
+                left:3px;
+                width:25px;
+                height:5px;
+                border-radius:50%;
+                background-color: rgb(0, 0, 0);
+            }
+            .block
+            {
+                display:inline-block;
+                position:absolute;
+                height:10px;
+                width:60px;
+                left:0;
+                top:0;
+                border-radius: 20px;
+                z-index:10;
+            
+            }
+            input:checked ~ label.circle
+            {
+                left:30px;
+            }
+            .status
+            {
+                position:absolute;
+                left:63px;
+                top:0px;
+                padding-top:2px;
+            }
+            input:checked ~ .status::after
+            {
+                content:"on";
+                position:absolute;
+                height:30px;
+                width:40px;
+                left:0px;
+                top:3px;
+                background-color: rgb(255, 255, 255);
+            
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+           
+            <div style="font-size:30px;position:fixed;top:0px;left:125px;background:white;width:100%;padding:10px 0px">Clipboard</div></br>
+            When you copy or cut something in windows,it's copied to the clipboard for you to paste.</br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Clipboard history</span></br>
+            Save multiple items to the clipboard to use later.Press the Windows logo key + V to view your clipboard history and paste from it.</br>
+            <div class="container">
+                <input type="checkbox" id="check" name="checkbox">
+                <label for="check"class="block"></label>
+                <label class="circle"></label>
+                <div class="status">off</div>
+            </div>
+            </br>
+            <span style="font-size:23px;">Sync across devices</span></br>
+            </br>
+            Paste text on your other devices.When this is on,microsoft receives your clipboard data to sync it across your devices.</br>
+            <button type="submit"  name="submit" >Get started</button></br>
+            </br>
+            <a href="">Privacy statement</a></br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Clear clipboard data</span></br>
+            Clear everything(except pinned items) on this device and with Microsoft.</br>
+            <button type="submit"  name="submit" >Clear</button></br>
+            </br>
+            </br>
+            <a href=""class="help"> get help</a></br>
+            <a href=""class="feedback"> give feedback</a>
+        
+        </div>
+    </body>
+</html>

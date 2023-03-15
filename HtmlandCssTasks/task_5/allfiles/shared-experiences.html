@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>shared-experiences</title>
+        <style>
+            *
+            {
+                margin:0;
+                padding:10px 0px;
+                font-size: 20px;
+            }
+            div.main
+            {
+                margin-left:125px;
+            }
+            a{
+                text-decoration: none;
+                font:rgb(53, 166, 236);
+            }
+            select{
+                
+                border-radius:1px;
+                font-size: 12px;
+                padding:5px;
+            }
+            option
+            {
+                font-size:12px;
+            }
+            button{
+                border:none;
+                background-color:rgb(227, 225, 225);
+                width:150px;
+                padding:3px 0;
+            }
+            button:hover
+            {
+                border:2px solid grey;
+            }
+            .help::before{
+                content:url(../settingsiframeimage/image.png);
+                
+            }
+            .feedback::before
+            {
+                content:url(../settingsiframeimage/image2.png);
+            }
+            .container
+            {
+                height: 10px;
+                width: 60px;
+                border:2px solid rgb(0, 0, 0);
+                border-radius: 20px;
+                position: relative;
+                /*if position is relative then no one can use the left space given by the element */
+            } 
+            input
+            {
+                display:none;
+            }
+            label.circle{
+                display:inline-block;
+                position:absolute;
+                top:3px;
+                left:3px;
+                width:25px;
+                height:5px;
+                border-radius:50%;
+                background-color: rgb(0, 0, 0);
+            }
+            .block
+            {
+                display:inline-block;
+                position:absolute;
+                height:10px;
+                width:60px;
+                left:0;
+                top:0;
+                border-radius: 20px;
+                z-index:10;
+            
+            }
+            input:checked ~ label.circle
+            {
+                left:30px;
+            }
+            .status
+            {
+                position:absolute;
+                left:63px;
+                top:0px;
+                padding-top:2px;
+            }
+            input:checked ~ .status::after
+            {
+                content:"on";
+                position:absolute;
+                height:30px;
+                width:40px;
+                left:0px;
+                top:3px;
+                background-color: rgb(255, 255, 255);
+            
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+           
+            <div style="font-size:30px;position:fixed;top:0px;left:125px;background:white;width:100%;padding:10px 0px">Shared experiences</div></br>
+            <span style="font-size:23px;">Accounts</span></br>
+            Shared experiences use all system accounts to authorize actions across devices. </br>
+            all accounts are working correctly</br>
+            <a href="">Manage your accounts</a></br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Nearby sharing</span></br>
+            Share content with a nearby device by using Bluetooth and Wi-Fi</br>
+            <input type="text" style="height:5px;width:50px;border-radius:90px;padding:10px 5px;background-color:rgb(255, 255, 255);color:black;" value=" O">off</br>
+            </br>
+            I can share or receive content from</br> 
+            <select>
+                <option value="everyone"selected>Everyone nearby</option>
+                <option value="device">My devices only</option>
+            </select></br>
+            </br>
+            Save files i received to</br>
+            C:\Users\fain\Downolads</br>
+            <button type="submit"  name="submit" style="background-color:grey;color:rgb(223, 221, 221);">change</button></br>
+            </br>
+            <a href="">Learn more</a>
+            </br>
+            </br>
+            <span style="font-size:23px;">Share across devices</span></br>
+            Let apps on other devices(including linked phones and tablets) open and message apps on this device,and vice versa</br>
+            <div class="container">
+                <input type="checkbox" id="check" name="checkbox">
+                <label for="check"class="block"></label>
+                <label class="circle"></label>
+                <div class="status">off</div>
+            </div></br>
+            </br>
+             I can share or receive from</br>
+             <select>
+                <option value="everyone">Everyone nearby</option>
+                <option value="device"selected>My devices only</option>
+            </select></br>
+            </br>
+             View apps and services you've given access to:
+            </br>
+            </br>
+            <a href="">Microsoft account</a></br>
+            <a href="">Work or school account</a></br>
+            </br>
+            </br>
+            <a href=""class="help"> get help</a></br>
+            <a href=""class="feedback"> give feedback</a>
+           
+        </div>
+    </body>
+</html>

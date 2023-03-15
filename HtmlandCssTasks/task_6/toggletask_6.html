@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>toggle</title>
+        <style>
+        .container
+        {
+            height:20px;
+            width:40px;
+            border:2px solid blue;
+            border-radius: 10px;
+            position: relative;
+            /*if position is relative then no one can use the left space given by the element */
+         } 
+        input
+        {
+            display:none;
+        }
+        label.circle{
+            display:inline-block;
+            position:absolute;
+            top:2px;
+            left:2px;
+            width:15px;
+            height:15px;
+            border-radius:50%;
+            background-color: rgb(5, 128, 200);
+        }
+        .block
+        {
+            display:inline-block;
+            position:absolute;
+            height:20px;
+            width:40px;
+            left:0;
+            top:0;
+            z-index:10;
+            /* we don't give background-color then it will be not visible,but it is still working */
+            /* background-color: antiquewhite; */
+           
+        }
+        input:checked ~ label.circle
+        {
+            left:22px;
+        }
+        .status
+        {
+            position:absolute;
+            left:43px;
+            top:0px;
+        }
+        input:checked ~ .status::after
+        {
+            content:"on";
+            position:absolute;
+            height:20px;
+            width:40px;
+            left:0px;
+            top:0px;
+            background-color: rgb(255, 255, 255);
+          
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <input type="checkbox" id="check" name="checkbox">
+            <label for="check"class="block"></label>
+            <label class="circle"></label>
+            <div class="status">off</div>
+        </div>
+        <!-- the relative and absolute position matters alot. -->
+    </body>
+</html>

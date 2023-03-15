@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>display</title>
+        <style>
+            *
+            {
+                margin:0;
+                padding:10px 0;
+                font-size: 20px;
+            }
+            div.main
+            {
+                margin-left:125px;
+            }
+            a
+            {
+                text-decoration: none;
+                font:rgb(53, 166, 236);
+            }
+            select{
+                
+                border-radius:1px;
+                font-size: 12px;
+                padding:5px;
+            }
+            option
+            {
+                font-size:12px;
+            }
+            button{
+                border:none;
+                background-color:rgb(227, 225, 225);
+                width:150px;
+            }
+            button:hover
+            {
+                border:2px solid grey;
+            }
+            .help::before{
+                content:url(../settingsiframeimage/image.png);
+                
+            }
+            .feedback::before
+            {
+                content:url(../settingsiframeimage/image2.png);
+            }
+            .container
+            {
+                height: 10px;
+                width: 60px;
+                border:2px solid blue;
+                border-radius: 20px;
+                position: relative;
+                /*if position is relative then no one can use the left space given by the element */
+            } 
+            input
+            {
+                display:none;
+            }
+            label.circle{
+                display:inline-block;
+                position:absolute;
+                top:3px;
+                left:3px;
+                width:25px;
+                height:5px;
+                border-radius:50%;
+                background-color: #06d;
+            }
+            .block
+            {
+                display:inline-block;
+                position:absolute;
+                height:10px;
+                width:60px;
+                left:0;
+                top:0;
+                border-radius: 20px;
+                z-index:10;
+            
+            }
+            input:checked ~ label.circle
+            {
+                left:30px;
+            }
+            .status
+            {
+                position:absolute;
+                left:63px;
+                top:0px;
+                padding-top:2px;
+            }
+            input:checked ~ .status::after
+            {
+                content:"on";
+                position:absolute;
+                height:30px;
+                width:40px;
+                left:0px;
+                top:3px;
+                background-color: rgb(255, 255, 255);
+            
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">    
+            <div style="font-size:30px;position:fixed;top:0px;left:125px;background:white;width:100%;padding:10px 0px;z-index:10;">Display</div></br>
+            Brightness color</br>
+            change brightness for the built-in display</br>
+            <input type="range"></br>
+            night light  </br>
+            </br>
+            <div class="container">
+                <input type="checkbox" id="check" name="checkbox">
+                <label for="check"class="block"></label>
+                <label class="circle"></label>
+                <div class="status">off</div>
+            </div></br>
+            <a href="">night light settings</a></br>
+            </br>
+            </br>
+            Windows HD color</br>
+            get a brighter and more vibrant picture for videos,games and apps that support HDR.</br>
+            <a href="">Windows HD Color settings</a></br>
+            </br>
+            </br>
+            Scale and Layout</br>
+            </br>
+            change the size of text,apps,and other items</br> 
+            <select>
+                <option value=100%>100%</option>
+                <option value=125% selected>125%(Recommended)</option>
+                <option value=150%>150%</option>
+                <option value=175%>175%</option>
+            </select></br>
+            <a href="">Advanced scaling settings</a></br>
+            </br>
+            Display resolution</br>
+            <select>
+                <option value=1680X1050>1680X1050</option>
+                <option value=1920X1080 selected>1920X1080(Recommended)</option>
+                <option value=1600X900>1600X900</option>
+                <option value=1440X900>1440X900</option>
+            </select></br>
+            </br>
+            Display orientation</br>
+            <select>
+                <option value="landscape" selected>landscape</option>
+                <option value="portrait">portrait</option>
+                <option value="landscape(flipped)">landscape(flipped)</option>
+                <option value="portrait(flipped)">portrait(flipped)</option>
+            </select></br>
+            </br>
+            Multiple displays</br>
+            <a href="">connect to wireless display</a></br>
+            </br>
+            older displays might not always connect automatically.select detect to try to connect to them.</br>
+            <button type="submit"  name="submit" >Detect</button></br>
+            </br>
+            </br>
+            <a href="">Advanced display settings</a></br>
+            <a href="">Graphics settings</a></br>
+            </br>
+            </br>
+            sleep better</br>
+            night light can help you get to sleep by displaying warmer colors at night.select night light settings to set things up.</br>
+            </br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Help from the web</span></br>
+            <a href="">Connecting to a projector or PC</a></br>
+            <a href="">Setting up multiple monitors</a></br>
+            <a href="">changing screen orientation</a></br>
+            <a href="">changing screen brightness</a></br>
+            </br>
+            </br>
+           <a href=""class="help"> get help</a></br>
+           <a href="" class="feedback"> give feedback</a></br>
+        </div>
+    </body>
+</html>

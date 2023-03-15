@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>storage</title>
+        <style>
+            *
+            {
+                margin:0;
+                padding:10px 0px;
+                font-size: 20px;
+            }
+            div.main
+            {
+                margin-left:125px;
+            }
+            a
+            {
+                text-decoration: none;
+                font:rgb(53, 166, 236);
+            }
+            select{
+                
+                border-radius:1px;
+                font-size: 12px;
+                padding:5px;
+            }
+            option
+            {
+                font-size:12px;
+            }
+            button{
+                border:none;
+                background-color:rgb(227, 225, 225);
+                width:150px;
+            }
+            button:hover
+            {
+                border:2px solid grey;
+            }
+            .help::before{
+                content:url(../settingsiframeimage/image.png);
+                
+            }
+            .feedback::before
+            {
+                content:url(../settingsiframeimage/image2.png);
+            }
+            .container
+            {
+                height: 10px;
+                width: 60px;
+                border:2px solid rgb(0, 0, 0);
+                border-radius: 20px;
+                position: relative;
+                /*if position is relative then no one can use the left space given by the element */
+            } 
+            input
+            {
+                display:none;
+            }
+            label.circle{
+                display:inline-block;
+                position:absolute;
+                top:3px;
+                left:3px;
+                width:25px;
+                height:5px;
+                border-radius:50%;
+                background-color: rgb(0, 0, 0);
+            }
+            .block
+            {
+                display:inline-block;
+                position:absolute;
+                height:10px;
+                width:60px;
+                left:0;
+                top:0;
+                border-radius: 20px;
+                z-index:9;
+            
+            }
+            input:checked ~ label.circle
+            {
+                left:30px;
+            }
+            .status
+            {
+                position:absolute;
+                left:63px;
+                top:0px;
+                padding-top:2px;
+            }
+            input:checked ~ .status::after
+            {
+                content:"on";
+                position:absolute;
+                height:30px;
+                width:40px;
+                left:0px;
+                top:3px;
+                background-color: rgb(255, 255, 255);
+            
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">    
+            <div style="font-size:30px;position:fixed;top:0px;left:125px;background:white;width:100%;padding:10px 0px;z-index:10;">Storage</div></br>
+            Storage sense can automatically free up space by gettiing rid of files you don't need,like temporary files and content in your recycle bin.</br>
+            <div class="container">
+                <input type="checkbox" id="check" name="checkbox">
+                <label for="check"class="block"></label>
+                <label class="circle"></label>
+                <div class="status">off</div>
+            </div></br>
+            <a href="">Configure Storage Sense or run it now</a></br>
+            <img src="../settingsiframeimage/storage.png"></br>
+            <a href="">Show more categories</a></br>
+            </br>
+            </br>
+            <span style="font-size:23px;">More Storage settings</span></br>
+            <a href="">View storage usage on other drives</a></br>
+            <a href="">Change where new content is saved</a></br>
+            <a href="">Manage Storage Spaces</a></br>
+            <a href="">Optimize Drives</a></br>
+            <a href="">View backup options</a></br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Keep clutter off your PC</span></br>
+            When Storage sense is turned on,it'll free up space only when your pc is low on space.To clean up unused files now,select Configure Storage Sense or run it now >Clean now. </br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Help from the web</span></br>
+            </br>
+            <a href="">Removing previous versions of Windows</a></br>
+            <a href="">Clearing Delivery Optimization cache</a></br>
+            <a href="">Showing/hiding the Recycle Bin</a></br>
+            <a href="">Deleting Recycle Bin files</a></br>
+            </br>
+            </br>
+           <a href=""class="help"> get help</a></br>
+           <a href="" class="feedback"> give feedback</a></br>
+        </div>
+    </body>
+</html>

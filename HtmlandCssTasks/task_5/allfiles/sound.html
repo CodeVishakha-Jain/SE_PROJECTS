@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sound</title>
+        <style>
+            *
+            {
+                margin:0;
+                padding:10px 0px;
+                font-size: 20px;
+            }
+            div.main
+            {
+                margin-left:125px;
+            }
+            a{
+                text-decoration: none;
+                font:rgb(53, 166, 236);
+            }
+            select{
+                
+                border-radius:1px;
+                font-size: 12px;
+                padding:5px;
+            }
+            option
+            {
+                font-size:12px;
+            }
+            button{
+                border:none;
+                background-color:rgb(227, 225, 225);
+                width:150px;
+            }
+            button:hover
+            {
+                border:2px solid grey;
+            }
+            .ran1
+            {
+                position:absolute;
+                top:230px;
+                left:260px;
+            }
+            .help::before{
+                content:url(../settingsiframeimage/image.png);
+                
+            }
+            .feedback::before
+            {
+                content:url(../settingsiframeimage/image2.png);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+           
+            <div style="font-size:30px;position:fixed;top:0px;left:125px;background:white;width:100%;padding:10px 0px">Sound</div></br>
+
+            <span style="font-size:23px;">Output</span></br>
+            Choose your output device</br>
+            <select>
+                <option value="speaker"selected>Speakers(Realtek(R) Audio)</option>
+            </select></br>
+
+            Certain apps may be set up to use different sound devices than the one selected here.Customize app volumes and devices in advanced sound options.</br>
+            <br>
+            <a href="">Device properties</a>
+            </br>
+            Master volume</br>
+            <input type="range"value=62 id="range"class="ran"><div class="ran1">62</div></br>
+            <button type="submit"  name="submit" >Troubleshoot</button></br>
+            <a href="">Manage sound devices</a></br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Input</span></br>
+            Choose your input device</br>
+            <select>
+                <option value="microphone"selected>Microphone Array(Realtek(R) Audio)</option>
+            </select></br>
+            Certain apps may be set up to use different sound devices than the one selected here.Customize app volumes and devices in advanced sound options.</br>
+            <a href="">Device properties</a></br>
+            Test your microphone</br>
+            <span class="micro"><input type="range"></span></br>
+            <button type="submit"  name="submit" >Troubleshoot</button></br>
+            <a href="">Manage sound devices</a></br>
+            </br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Advanced sound options</span></br>
+            Add volume and device preferences</br>
+            Customize app volumes and the speakers or devices they use.</br>
+            </br> 
+            </br> 
+            </br> 
+            <b style="font-size:27px;">Related settings</b></br>
+            <a href="">Bluetooth and other devices</a></br>
+            <a href="">Sound control panel</a></br>
+            <a href="">Microphone privacy settings</a></br>
+            <a href="">Ease of access audio settings</a></br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Help from the web</span></br>
+            <a href="">Troubleshooting audio problem with Windows update KB5015878</a></br>
+            <a href="">Turning on spatial sound</a></br>
+            <a href="">Setting up a microphone</a></br>
+            <a href="">Fixing sound problems</a></br>
+            </br>
+            </br>
+            <a href=""class="help"> get help</a></br>
+            <a href=""class="feedback"> give feedback</a>
+           
+        </div>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>color-selector</title>
+        <style>
+            .container
+            {
+                position:absolute;
+                left:25%;
+                top:25%;
+                width:750px;
+                height:400px;
+                background-color:black;
+                border:1px double rgba(255, 255, 255, 0.721);
+            }
+            .red
+            {
+                margin: 2px;
+                display:inline-block;
+                height:50%;
+                width:19%;
+                background-color: red;
+                border-radius: 15px;
+            }
+            .green
+            {
+                margin: 2px;
+                display:inline-block;
+                height:50%;
+                width:19%;
+                background-color:green;
+                border-radius:15px;
+            }
+            .blue
+            {
+                margin: 2px;
+                display:inline-block;
+                height:50%;
+                width:19%;
+                background-color:blue;
+                border-radius: 15px;
+            }
+            .yellow
+            {
+                margin: 2px;
+                display:inline-block;
+                height:50%;
+                width:19%;
+                background-color: yellow;
+                border-radius: 15px;
+            }
+            .pink
+            {
+                margin: 2px;
+                display:inline-block;
+                height:50%;
+                width:19%;
+                background-color: pink;
+                border-radius: 15px;
+            }
+            .color-selector
+            {
+                background-color:white;
+                margin: 2px;
+                padding:8.5% 20%;
+                border-radius: 15px;
+                text-align: center;
+                font-size:50px;
+            }
+            .red:hover ~ .color-selector::after{
+                position:absolute;
+                left:33%;
+                top:70%;
+                width:40%;
+                background-color: white;
+                content:"RED";
+                color:red;
+            }
+            .green:hover ~ .color-selector::after{
+                position:absolute;
+                left:33%;
+                top:70%;
+                width:40%;
+                background-color: white;
+                content:"GREEN";
+                color:green;
+            }
+            .blue:hover ~ .color-selector::after{
+                position:absolute;
+                left:33%;
+                top:70%;
+                width:40%;
+                background-color: white;
+                content:"BLUE";
+                color:blue;
+            }
+            .yellow:hover ~ .color-selector::after{
+                position:absolute;
+                left:33%;
+                top:70%;
+                width:40%;
+                background-color: white;
+                content:"YELLOW";
+                color:yellow;
+            }
+            .pink:hover ~ .color-selector::after{
+                position:absolute;
+                left:33%;
+                top:70%;
+                width:40%;
+                background-color: white;
+                content:"PINK";
+                color:pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+            <div class="yellow"></div>
+            <div class="pink"></div>
+            <div class="color-selector">NO COLOR</div>
+        </div>
+    </body>
+</html>

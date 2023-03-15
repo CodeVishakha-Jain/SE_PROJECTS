@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>focus-assist</title>
+        <style>
+              *
+            {
+                margin:0;
+                padding:10px 0;
+                font-size: 20px;
+            }
+            div.main
+            {
+                margin-left:125px;
+            }
+            a
+            {
+                text-decoration: none;
+                font:rgb(53, 166, 236);
+            }
+            select{
+                
+                border-radius:1px;
+                font-size: 12px;
+                padding:5px;
+            }
+            option
+            {
+                font-size:12px;
+            }
+            button{
+                border:none;
+                background-color:rgb(227, 225, 225);
+                width:150px;
+            }
+            button:hover
+            {
+                border:2px solid grey;
+            }
+            .help::before{
+                content:url(../settingsiframeimage/image.png);
+                
+            }
+            .feedback::before
+            {
+                content:url(../settingsiframeimage/image2.png);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">    
+            <div style="font-size:30px;position:fixed;top:0px;left:125px;background:white;width:100%;padding:10px 0px">Focus assist</div></br>
+            Choose which notification you'd like to see and hear so you can stay focused.The rest will go straight to action center where you can see them any time.</br>
+            </br>
+            <input type="radio" name="focus" checked> Off</br>
+            &nbsp &nbsp Get all notifications from your apps and contacts.</br>
+            </br>
+            <input type="radio"name="focus"> Priority only</br>
+            &nbsp &nbsp See only selected notifications from the priority list.The rest will go staright to action center.</br>
+            <a href="">&nbsp &nbsp Customize your priority list</a></br>
+            </br>
+            <input type="radio"name="focus"> Alarms only</br>
+            &nbsp &nbsp Hide all notifications,except for alarms</br>
+            </br>
+            <span style="font-size:23px;">Automatic rules</span></br>
+            Choose the times and activities when you don't want to be disturbed,and focus assist will turn on automatically.</br>
+            <img src="../settingsiframeimage/focusassist.png"></br>
+            <input type="checkbox" style="background-color:rgb(14, 164, 223);color:white"> Show me a summary of what I missed while focus assist was on</br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Help from the web</span></br>
+            <a href="">Turning focus assist on or off</a></br>
+            </br>
+            </br>
+           <a href=""class="help"> get help</a></br>
+           <a href="" class="feedback"> give feedback</a></br>
+        </div>
+    </body>
+</html>

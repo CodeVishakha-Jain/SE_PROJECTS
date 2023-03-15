@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>battery</title>
+        <style>
+              *
+            {
+                margin:0;
+                padding:10px 0;
+                font-size: 20px;
+            }
+            div.main
+            {
+                margin-left:125px;
+            }
+            a
+            {
+                text-decoration: none;
+                font:rgb(53, 166, 236);
+            }
+            select{
+                
+                border-radius:1px;
+                font-size: 12px;
+                padding:5px;
+            }
+            option
+            {
+                font-size:12px;
+            }
+            button{
+                border:none;
+                background-color:rgb(227, 225, 225);
+                width:150px;
+            }
+            button:hover
+            {
+                border:2px solid grey;
+            }
+            .help::before{
+                content:url(../settingsiframeimage/image.png);
+                
+            }
+            .feedback::before
+            {
+                content:url(../settingsiframeimage/image2.png);
+            } 
+            .container
+            {
+                height: 10px;
+                width: 60px;
+                border:2px solid blue;
+                border-radius: 20px;
+                position: relative;
+                /*if position is relative then no one can use the left space given by the element */
+            } 
+            input
+            {
+                display:none;
+            }
+            label.circle{
+                display:inline-block;
+                position:absolute;
+                top:3px;
+                left:3px;
+                width:25px;
+                height:5px;
+                border-radius:50%;
+                background-color: #06d;
+            }
+            .block
+            {
+                display:inline-block;
+                position:absolute;
+                height:10px;
+                width:60px;
+                left:0;
+                top:0;
+                border-radius: 20px;
+                z-index:7;
+            
+            }
+            input:checked ~ label.circle
+            {
+                left:30px;
+                background-color: rgb(143, 143, 143);
+            }
+            .status
+            {
+                position:absolute;
+                left:63px;
+                top:0px;
+                padding-top:2px;
+            }
+            input:checked ~ .status::after
+            {
+                content:"on";
+                position:absolute;
+                height:30px;
+                width:40px;
+                left:0px;
+                top:3px;
+                background-color: rgb(255, 255, 255);
+            
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">    
+            <div style="font-size:30px;position:fixed;top:0px;left:125px;background:white;width:100%;padding:10px 0px;z-index:10">Battery</div></br>
+            <span style="font-size:23px;">Battery saver</span></br>
+            <div class="container">
+                <input type="checkbox" id="check" name="checkbox">
+                <label for="check"class="block"></label>
+                <label class="circle"></label>
+                <div class="status">off</div>
+            </div>
+            </br>
+            </br>
+            Turn battery saver on automatically at</br>
+            <select>
+                <option>Never</option>
+                <option>10%</option>
+                <option selected>20%(Recommended)</option>
+                <option>30%</option>
+                <option>40%</option>
+                <option>50%</option>
+                <option>Always</option>
+            </select></br>
+            <input type="checkbox" checked style="background-color:rgb(0, 191, 255);color:white;">Lower screen brightness while in battery saver</br>
+            </br>
+            </br>
+            <span style="font-size:23px;">Battery usage per app</span></br>
+            Time period:<select>
+                <option selected>24 hours</option>
+                <option>1 week</option>
+            </select></br>
+            <img src="../settingsiframeimage/battery1.png"style="padding-bottom:0px"></br>
+            <img src="../settingsiframeimage/battery2.png"style="padding-bottom:0px"></br>
+            <img src="../settingsiframeimage/battery3.png"style="padding-bottom:0px"></br>
+            <img src="../settingsiframeimage/battery4.png"style="padding-bottom:0px"></br>
+            </br>
+            </br>
+           <a href=""class="help"> get help</a></br>
+           <a href="" class="feedback"> give feedback</a></br>
+        </div>
+    </body>
+</html>

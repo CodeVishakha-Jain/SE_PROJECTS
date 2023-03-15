@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student registration</title>
+        <style>
+            div
+            {
+                background-color:blueviolet;
+                color:white;
+                margin:auto auto;
+                padding:10px;
+                height:700px;
+                width:900px;
+            }
+            .space
+            {
+                display:inline-block;
+                width:200px;
+            }
+            table{
+                display:inline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center" style="color:blueviolet"><u style="color:blueviolet">STUDENT REGISTRATION FORM</u></h1>
+        <div>
+            <form method="post" action="demo.html">
+                <p>
+                    <label for="first_name" class="space">FIRST NAME</label>
+                    <input id="first_name"type="text" max-length="30" pattern="[A-Za-z]{2,30}"  title="minimum two length">
+                </p>
+                <!-- pattern is important to input specific type of pattern,in pattern the the last curly braces shows number of input characters{minimum,maximum},we have to know only one of them the minimum and maximum values but if we don't know one of the value then we don't have to write it,we always have to know the minimum length -->
+                <p>
+                    <label for="last_name" class="space">LAST NAME</label>
+                    <input id="last_name"type="text" max-length="30" pattern="[A-Za-z]{2,30}" title="minimum two length">
+                    <!-- in above last name ,the minimum length is 2 and maximum length is 30. -->
+                </p>
+                <p>
+                    <label for="dob" class="space">DATE OF BIRTH</label>
+                    <input type="date" id="dob">
+                </p>
+                <p>
+                    <label for="email_id" class="space">EMAIL ID</label>
+                    <input type="text" id="email_id">
+                </p>
+                <p>
+                    <label for="mobile_number" class="space">MOBILE NUMBER</label>
+                    <input type="text" id="mobile_number" pattern="[0-9]{10}">
+                </p>
+                <p>
+                    <label class="space">GENDER</label>
+                    <input type="radio" id="male" value="male" name="gender"><label for="male">Male</label>
+                    <input type="radio" id="female" value="female" name="gender"><label for="female">Female</label>
+                </p>
+                <p>
+                    <label for="address" class="space">ADDRESS</label>
+                    <textarea id="address"></textarea>
+                </p>
+                <p>
+                    <label for="city" class="space">CITY</label>
+                    <input type="text" max-length="30" pattern="[A-Za-z]{2,30}" id="city">
+                </p>
+                <p>
+                    <label for="pin_code" class="space">PIN CODE</label>
+                    <input type="text" max-length="06" id="pin_code" pattern="[0-9]{6}">
+                    <!-- when we have cleared about how many numbers can be entered then we use {numbers},and we not cleared about how many numbers can be entered then we give {minimum,maximum}in pattern with the specified pattern -->
+                </p>
+                <p>
+                    <label for="state" class="space">STATE</label>
+                    <input type="text" max-length="30" pattern="[A-Za-z]{2,30}" id="state">
+                </p>
+                <p>
+                    <label for="country" class="space">COUNTRY</label>
+                    <input type="text" id="country" value="India">
+                </p>
+                <p>
+                    <label class="space">HOBBIES</label>
+                    <label for="drawing">Drawing</label>
+                    <input type="checkbox" id="drawing" name="hobbies"value="drawing">
+                    <label for="singing">singing</label>
+                    <input type="checkbox" id="singing" name="hobbies"value="singing">
+                    <label for="dancing">Dancing</label>
+                    <input type="checkbox" id="dancing" name="hobbies"value="dancing">
+                    <label for="sketching">Sketching</label>
+                    <input type="checkbox" id="sketching" name="hobbies"value="sketching">
+                    <label for="others">Others</label>
+                    <input type="checkbox" id="Others" name="hobbies"value="others">
+                </p>
+                <lable class="space">QUALIFICATION</lable>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SI.NO.</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text" maxlength="10"></td>
+                            <td><input type="text" pattern="[0-9][0-9].[0-9]{1,}" ></td>
+                            <!-- here any decimal number -->
+                            <td><input type="text" ></td>
+                        </tr>
+                         <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text" maxlength="10" ></td>
+                            <td><input type="text" pattern="[0-9][0-9].[0-9]{1,}" ></td>     
+                            <td><input type="text" ></td> 
+                         </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text" maxlength="10" ></td>
+                            <td><input type="text" pattern="[0-9][0-9].[0-9]{1,}"></td>
+                            <td><input type="text" ></td>
+                        </tr>
+                         <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text" maxlength="10"  ></td>
+                            <td><input type="text" pattern="[0-9][0-9].[0-9]{1,}"></td>
+                            <td><input type="text" ></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <label class="space">COURSES APPLIED FOR</label>
+                    <label for="bca">BCA</label>
+                    <input type="radio" id="bca" value="bca"name="course">
+                    <label for="bcom">B.Com</label>
+                    <input type="radio" id="bcom" value="bcom"name="course">
+                    <label for="bsc">B.Sc</label>
+                    <input type="radio" id="bsc" value="bsc"name="course">
+                    <label for="ba">B.A</label>
+                    <input type="radio" id="ba" value="ba"name="course">
+                </p>
+                <p>
+                    <button type="submit" value="submit" name="submit"style="margin-left:400px;">submit</button>
+                    <button type="reset" value="reset" name="reset">reset</button>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

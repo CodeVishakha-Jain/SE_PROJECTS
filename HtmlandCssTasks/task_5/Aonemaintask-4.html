@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            settings
+        </title>
+        <style>
+            body{
+                margin:0;
+            }
+            p,li{
+                list-style: none;
+                padding:6px 10px;
+            }
+            input
+            {
+                padding:8px 8px;
+                margin-left:17px;
+                border:1px solid grey;
+                width:70%;
+            }
+            a{
+                text-decoration:none;
+                color:#000000;
+            }
+            div.list
+            {
+                
+                display:inline-block;
+                width:15%;  
+                /* width is very important while minimizing */
+                padding-right:10px;
+                border-right:1px solid black;
+                color:black;
+                background:rgba(207, 203, 203, 0.5);
+                z-index:2;
+            }
+            iframe{
+              
+                position:absolute;
+                top:0;
+                left:20%;
+                width:80%;
+                height:100vh;
+                padding:0;
+                margin:0;
+                min-width:60%;
+                
+                
+             
+            }
+            ul{
+                padding-left:0px;
+            }
+            li:hover
+            {
+        
+                background-color:grey;
+            }
+            .one::before
+            {
+                content:url(./settingsiframeimage/one.png);
+                /* this is used for inserting image before the particular element*/
+            }
+            .two::before
+            {
+                content:url(./settingsiframeimage/two.png);
+            }
+            .three::before
+            {
+                content:url(./settingsiframeimage/three.png);
+            }
+            .four::before
+            {
+                content:url(./settingsiframeimage/four.png);
+            }
+            .five::before
+            {
+                content:url(./settingsiframeimage/five.png);
+            }
+            .six::before
+            {
+                content:url(./settingsiframeimage/six.png);
+            }
+            .seven::before
+            {
+                content:url(./settingsiframeimage/seven.png);
+            }
+            .eight::before
+            {
+                content:url(./settingsiframeimage/eight.png);
+            }
+            .nine::before
+            {
+                content:url(./settingsiframeimage/nine.png);
+            }
+            .ten::before
+            {
+                content:url(./settingsiframeimage/ten.png);
+            }
+            .eleven::before
+            {
+                content:url(./settingsiframeimage/eleven.png);
+            }
+            .twelve::before
+            {
+                content:url(./settingsiframeimage/twelve.png);
+            }
+            .thirteen::before
+            {
+                content:url(./settingsiframeimage/thirteen.png);
+            }
+            .fourteen::before
+            {
+                content:url(./settingsiframeimage/fourteen.png);
+            }
+            .fifteen::before
+            {
+                content:url(./settingsiframeimage/fifteen.png);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="list">
+                <p class="one">&nbsp&nbspHOME</p>
+                <input type="text" id="search" name="search" placeholder="find a setting" class="one" style="border:2px solid grey; height:20px;font-size:16px;padding-left:10px">
+                <p style="font-weight:bold">system</p>
+                <ul>
+                    <li><a class="two" href="./allfiles/display.html"target="frame" scrolling="no">&nbsp display</a> </li>
+                    <li><a class="three" href="./allfiles/sound.html " target="frame" scrolling="no">&nbsp sound</a> </li>
+                    <li><a class="four" href="./allfiles/notifications&actions.html" target="frame" scrolling="no">&nbsp notifications & actions</a> </li>
+                    <li><a class="five" href="./allfiles/focus-assist.html" target="frame" scrolling="no">&nbsp focus assist</a> </li>
+                    <li><a class="six" href="./allfiles/power&sleep.html" target="frame" scrolling="no">&nbsp power & sleep</a></li>
+                    <li><a class="seven" href="./allfiles/battery.html" target="frame" scrolling="no">&nbsp battery</a></li>
+                    <li><a class="eight" href="./allfiles/storage.html" target="frame" scrolling="no">&nbsp storage</a> </li>
+                    <li><a class="nine" href="./allfiles/tablet.html" target="frame" scrolling="no">&nbsp tablet</a></li>
+                    <li><a class="ten" href="./allfiles/multitasking.html" target="frame" scrolling="no">&nbsp multitasking</a> </li>
+                    <li><a class="eleven" href="./allfiles/projecting-to-this-pc.html" target="frame" scrolling="no">&nbsp projecting to this pc</a> </li>
+                    <li><a class="twelve" href="./allfiles/shared-experiences.html" target="frame" scrolling="no">&nbsp shared experiences</a> </li>
+                    <li><a class="thirteen" href="./allfiles/clipboard.html" target="frame" scrolling="no">&nbsp clipboard</a> </li>
+                    <li><a class="fourteen" href="./allfiles/remote-desktop.html" target="frame" scrolling="no">&nbsp remote desktop</a> </li>
+                    <li><a class="fifteen" href="./allfiles/default.html" target="frame" scrolling="no">&nbsp about</a> </li>
+                </ul>
+            </div>
+            <iframe src="./allfiles/default.html" name="frame" frameborder="0" ></iframe>
+        </div>
+    </body>
+</html>
